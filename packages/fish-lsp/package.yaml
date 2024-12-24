@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=github-tags
-  id: pkg:github/ndonfris/fish-lsp@c73c985ebc66
+  id: pkg:github/ndonfris/fish-lsp@c73c985ebc66e574026b29c5354c50b6a86832e0
   build:
     run: |
       yarn install
