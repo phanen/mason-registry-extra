@@ -1,0 +1,25 @@
+---
+name: uncrustify
+description:  Code beautifier
+homepage: http://uncrustify.sourceforge.net/
+licenses:
+  - GPL-2.0
+languages:
+  - C
+  - C++
+categories:
+  - Formatter
+
+source:
+  # renovate:datasource=github-tags
+  id: pkg:github/uncrustify/uncrustify@uncrustify-0.80.1
+  build:
+    - target: unix
+      run: |
+        cmake --install-prefix="$PWD" -Bbuild -GNinja -DCMAKE_BUILD_TYPE=Release
+        ninja -Cbuild
+        ninja -Cbuild install
+      bin: bin/uncrustify
+
+bin:
+  uncrustify: "{{source.build.bin}}"
