@@ -19,7 +19,7 @@ source:
   build:
     - target: unix
       run: |
-        cargo build --release
+        cargo build --release --package autocorrect-cli
       bin: target/release/autocorrect
 
 bin:
