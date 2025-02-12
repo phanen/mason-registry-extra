@@ -1,0 +1,16 @@
+---
+name: emmylua_ls
+description: Lua language server in rust.
+homepage: https://github.com/CppCXY/emmylua-analyzer-rust
+licenses:
+  - MIT
+languages:
+  - Lua
+categories:
+  - LSP
+
+source:
+  id: pkg:cargo/emmylua_ls@0.5.0
+
+bin:
+  protols: cargo:emmylua_ls
