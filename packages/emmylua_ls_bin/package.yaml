@@ -1,0 +1,22 @@
+---
+name: emmylua_ls_bin
+description: Lua language server in rust (binary release).
+homepage: https://github.com/CppCXY/emmylua-analyzer-rust
+licenses:
+  - MIT
+languages:
+  - Lua
+categories:
+  - LSP
+
+source:
+  id: pkg:github/CppCXY/emmylua-analyzer-rust@0.5.4
+  asset:
+    - target: linux_arm64_gnu
+      file: emmylua_ls-{{version}}-linux-arm64.tar.gz
+      bin: exec:emmylua_ls
+    - target: linux_x64_gnu
+      file: emmylua_ls-{{version}}-linux-x64.tar.gz
+      bin: exec:emmylua_ls
+bin:
+  emmylua_ls_bin: "{{source.asset.bin}}"
