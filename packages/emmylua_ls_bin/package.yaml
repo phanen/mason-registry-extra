@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/CppCXY/emmylua-analyzer-rust@0.8.0
+  id: pkg:github/CppCXY/emmylua-analyzer-rust@0.9.0
   asset:
     - target: linux_arm64_gnu
       file: emmylua_ls-linux-arm64.tar.gz
