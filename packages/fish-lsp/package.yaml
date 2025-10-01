@@ -11,7 +11,7 @@ categories:
 
 source:
   # renovate:datasource=git-refs
-  id: pkg:github/ndonfris/fish-lsp@298821d662a5d545830e2e2998fd4ec530117669
+  id: pkg:github/ndonfris/fish-lsp@cc77cf3f0cf7946486ae26b64e5a176de5642098
   build:
     run: |
       yarn install
