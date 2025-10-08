@@ -15,7 +15,7 @@ categories:
 
 source:
   # renovate:datasource=github-tags
-  id: pkg:github/huacnlee/autocorrect@v2.16.0
+  id: pkg:github/huacnlee/autocorrect@v2.16.1
   build:
     - target: unix
       run: |
