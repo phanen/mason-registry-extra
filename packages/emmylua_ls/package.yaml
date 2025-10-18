@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:cargo/emmylua_ls@0.15.0
+  id: pkg:cargo/emmylua_ls@0.16.0
 
 bin:
   emmylua_ls: cargo:emmylua_ls
