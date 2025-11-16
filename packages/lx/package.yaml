@@ -10,11 +10,11 @@ categories:
   - LSP
 
 source:
-  # renovate:datasource=github-releases
   id: pkg:github/lumen-oss/lux@v0.20.1
-  download:
-    files:
-      lx.AppImage: https://github.com/lumen-oss/lux/releases/download/{{version}}/lx_{{ version | strip_prefix "v" }}_x86_64.AppImage
+  asset:
+    - target: linux_x64_gnu
+      file: lx_{{ version | strip_prefix "v" }}_x86_64.AppImage
+      bin: exec:lx_{{ version | strip_prefix "v" }}_x86_64.AppImage
 
 bin:
   lx: lx.AppImage
