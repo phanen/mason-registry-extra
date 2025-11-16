@@ -10,8 +10,8 @@ categories:
   - LSP
 
 source:
-  # renovate:datasource=git-refs
-  id: pkg:github/ndonfris/fish-lsp@298821d662a5d545830e2e2998fd4ec530117669
+  # renovate:datasource=github-tags
+  id: pkg:github/ndonfris/fish-lsp@v1.1.0
   build:
     run: |
       yarn install
