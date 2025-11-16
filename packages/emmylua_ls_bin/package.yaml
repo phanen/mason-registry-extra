@@ -12,9 +12,6 @@ categories:
 source:
   id: pkg:github/CppCXY/emmylua-analyzer-rust@0.12.0
   asset:
-    - target: linux_arm64_gnu
-      file: emmylua_ls-linux-arm64.tar.gz
-      bin: exec:emmylua_ls
     - target: linux_x64_gnu
       file: emmylua_ls-linux-x64.tar.gz
       bin: exec:emmylua_ls
