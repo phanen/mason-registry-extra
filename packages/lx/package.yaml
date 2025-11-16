@@ -1,0 +1,20 @@
+---
+name: lx
+description: A luxurious package manager for Lua
+homepage: https://github.com/lumen-oss/lux
+licenses:
+  - LGPL-3.0+
+languages:
+  - Lua
+categories:
+  - LSP
+
+source:
+  # renovate:datasource=github-releases
+  id: pkg:github.com/lumen-oss/lux@v0.20.1
+  download:
+    files:
+      lx.AppImage: https://github.com/lumen-oss/lux/releases/download/{{version}}/lx_{{ version | strip_prefix "v" }}_x86_64.AppImage
+
+bin:
+  lx: lx.AppImage
