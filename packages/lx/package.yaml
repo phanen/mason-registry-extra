@@ -13,8 +13,18 @@ source:
   id: pkg:github/lumen-oss/lux@v0.20.1
   asset:
     - target: linux_x64_gnu
-      file: lx_{{ version | strip_prefix "v" }}_x86_64.AppImage
-      bin: exec:lx_{{ version | strip_prefix "v" }}_x86_64.AppImage
+      file: lx_{{ version | strip_prefix "v" }}_x86_64.tar.gz
+      bin: exec:usr/bin/lx
+      pkgconfig: usr/lib/pkgconfig/
+      fish: usr/share/fish/
+      lux: usr/share/lux-lua/
+      man: usr/share/man/
 
 bin:
   lx: "{{source.asset.bin}}"
+
+share:
+  pkgconfig/: "{{source.asset.pkgconfig}}"
+  fish/: "{{source.asset.fish}}"
+  lux-lua/: "{{source.asset.lux}}"
+  man/: "{{source.asset.man}}"
