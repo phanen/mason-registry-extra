@@ -23,6 +23,7 @@ source:
 bin:
   lx: "{{source.asset.bin}}"
 
+# TODO: don't seem work properly, use `nix profile add` instead
 share:
   pkgconfig/: "{{source.asset.pkgconfig}}"
   fish/: "{{source.asset.fish}}"
