@@ -10,7 +10,7 @@ categories:
   - LSP
 
 source:
-  id: pkg:github/lumen-oss/lux@v0.22.4
+  id: pkg:github/lumen-oss/lux@v0.22.5
   asset:
     - target: linux_x64_gnu
       file: lx_{{ version | strip_prefix "v" }}_x86_64.tar.gz
